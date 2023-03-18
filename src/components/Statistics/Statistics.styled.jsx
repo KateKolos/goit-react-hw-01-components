@@ -1,6 +1,8 @@
 import styled from 'styled-components';
 
 export const StatsWrapper = styled.div`
+  width: 300px;
+  border: 1px solid rgba(153, 128, 168, 0.35);
   border-radius: 4px;
   box-shadow: rgba(153, 128, 168, 0.35) 0px 5px 15px;
 `;
@@ -11,7 +13,7 @@ export const StatsList = styled.ul`
   padding: 0;
 
   .stat-item {
-    padding: 10px;
+    padding: 13px;
     display: flex;
     flex-direction: column;
   }

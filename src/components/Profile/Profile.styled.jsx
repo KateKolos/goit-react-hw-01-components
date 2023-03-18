@@ -1,12 +1,13 @@
 import styled from 'styled-components';
 
 export const UserCard = styled.div`
+  width: 300px;
+  border: 1px solid rgba(153, 128, 168, 0.35);
   box-shadow: rgba(153, 128, 168, 0.35) 0px 5px 15px;
   border-radius: 4px;
-  margin: 0 auto;
-  // border: 1px solid rgb(153, 128, 168);
-  padding: 20px;
+  // padding: 5px;
   text-align: center;
+  margin: 0 auto;
 `;
 
 export const UserInfo = styled.div`
