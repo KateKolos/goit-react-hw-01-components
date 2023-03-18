@@ -7,7 +7,7 @@ import {
 export const TransactionHistory = ({ items }) => {
   return (
     <TransactionWrapper>
-      <TransactionTable class="transaction-history">
+      <TransactionTable>
         <thead>
           <tr>
             <th>Type</th>
@@ -30,4 +30,13 @@ export const TransactionHistory = ({ items }) => {
       </TransactionTable>
     </TransactionWrapper>
   );
+};
+
+TransactionHistory.prototype = {
+  items: PropTypes.shape({
+    id: PropTypes.number.isRequired,
+    type: PropTypes.string.isRequired,
+    amount: PropTypes.number.isRequired,
+    currency: PropTypes.string.isRequired,
+  }).isRequired,
 };
