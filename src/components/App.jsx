@@ -23,7 +23,7 @@ export const App = () => {
     >
       <Wrapper>
         <Profile userData={userData} />
-        <Statistics stats={statisticsData} />
+        <Statistics stats={statisticsData} title="Upload stats" />
         <FriendList friends={friendsData} />
         <TransactionHistory items={transactionData} />
       </Wrapper>
