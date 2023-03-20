@@ -5,7 +5,7 @@ import { StatsList, StatsTitle, StatsWrapper } from './Statistics.styled';
 export const Statistics = ({ stats, title }) => {
   return (
     <StatsWrapper>
-      <StatsTitle>{title}</StatsTitle>
+      {title && <StatsTitle>{title}</StatsTitle>}
       <StatsList>
         {stats.map(({ id, label, percentage }) => {
           let getRandomColor =
